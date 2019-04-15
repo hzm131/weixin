@@ -1,13 +1,12 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
-import { AtButton,AtForm,AtInput,AtMessage } from 'taro-ui'
+import { AtButton,AtForm,AtInput,AtMessage,AtTabBar } from 'taro-ui'
 import './index.scss'
 export default class Index extends Component {
 
   config = {
-    navigationBarTitleText: '首页'
+    navigationBarTitleText: '管理页'
   }
-
   state = {
     username:'',
     password:''
@@ -30,7 +29,7 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <AtButton onClick={this.onPath.bind(this)}>登录</AtButton>
+        管理页面
       </View>
     )
   }
