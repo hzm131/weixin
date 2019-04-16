@@ -1,11 +1,16 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
-import { AtButton,AtForm,AtInput,AtMessage } from 'taro-ui'
+import { AtButton,AtForm,AtInput,AtMessage ,AtCard } from 'taro-ui'
 import './index.scss'
+import 'taro-ui/dist/style/components/card.scss';
 export default class Index extends Component {
 
   config = {
-    navigationBarTitleText: '首页'
+    navigationBarTitleText: 'NGC基金业务管理系统',
+    navigationBarBackgroundColor: '#273954',
+    navigationBarTextStyle: 'white',
+    backgroundColor: "#eeeeee",
+    backgroundTextStyle: "light"
   }
 
   state = {
@@ -30,8 +35,8 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <AtButton onClick={this.onPath.bind(this)}>登录</AtButton>
       </View>
+
     )
   }
 }
