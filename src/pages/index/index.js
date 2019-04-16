@@ -2,6 +2,7 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import { AtButton,AtForm,AtInput,AtMessage,AtCard,AtList,AtListItem } from 'taro-ui'
 import './index.scss'
+import 'taro-ui/dist/style/components/card.scss';
 export default class Index extends Component {
 
   config = {
@@ -131,8 +132,8 @@ export default class Index extends Component {
             </AtList>
           </View>
         </View>
-
       </View>
+
     )
   }
 }
