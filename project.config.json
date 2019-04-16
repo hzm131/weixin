@@ -2,12 +2,15 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "taro01",
 	"description": "",
-	"appid": "wxef450cb24dd87576",
+	"appid": "wx6003a02c65acc73a",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": false,
 		"postcss": false,
-		"minified": false
+		"minified": false,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
 	},
 	"compileType": "miniprogram",
 	"simulatorType": "wechat",
